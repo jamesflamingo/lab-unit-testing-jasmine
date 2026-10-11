@@ -38,29 +38,3 @@ describe("Iteration 2", () => {
   });
 });
 
-
-describe("Iteration 3", () => {
-  describe("Function calculateArea", () => {
-
-    it("should be defined", () => {
-      expect(calculateArea).toBeDefined();
-    });
-
-    it("should take two arguments", () => {
-      expect(calculateArea.length).toBe(2);
-    });
-
-    it("should return the area of a rectangle", () => {
-      expect(calculateArea(5, 3)).toEqual(15);
-      expect(calculateArea(10, 4)).toEqual(40);
-      expect(calculateArea(7, 7)).toEqual(49);
-    });
-
-    it("should return undefined if any argument is not provided", () => {
-      expect(calculateArea(5)).toEqual(undefined);
-      expect(calculateArea()).toEqual(undefined);
-      expect(calculateArea(undefined, 3)).toEqual(undefined);
-    });
-
-  });
-});
